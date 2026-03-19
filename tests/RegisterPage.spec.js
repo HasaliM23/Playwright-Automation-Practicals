@@ -29,7 +29,7 @@ test("Verify password Mismatch error" , async({page})=>{
 
 });
 
-test.only("Verify that the Password character limit is enforced" , async({page})=>{
+test("Verify that the Password character limit is enforced" , async({page})=>{
 
     await page.goto("https://practice.expandtesting.com/register");
 
@@ -45,4 +45,17 @@ test.only("Verify that the Password character limit is enforced" , async({page})
 
 });
 
+test.only("Veryfy that user fields are mandatory" , async({page})=>{
+
+    await page.goto("https://practice.expandtesting.com/register");
+
+    await page.locator("(//button[normalize-space()='Register'])[1]").click();
+
+        await page.waitForTimeout(3000);
+
+
+
+
+
+});
 
