@@ -45,4 +45,6 @@ test("verify that the user can submit the practice form succesfully" , async({pa
 
 });
 
+
+
 //npx playwright test PracticeForm.spec.js --project chromium --headed
